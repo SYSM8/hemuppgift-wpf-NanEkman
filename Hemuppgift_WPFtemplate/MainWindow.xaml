@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
     <Grid>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
         <Button x:Name="btnGrid" Content="Grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="200" Click="GridButton"/>
         <Button x:Name="btnStackPanel" Content="StackPanel" HorizontalAlignment="Right" VerticalAlignment="Top" Height="200" Width="200" Click="StackPanelButton"/>
         <Button x:Name="btnWrapPanel" Content="WrapPanel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="200" Width="200" Click="WrapPanelButton"/>
