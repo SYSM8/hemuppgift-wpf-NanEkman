@@ -6,13 +6,56 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="Grid_Window" Height="450" Width="800">
+
     <Grid>
-        <TextBlock>
-                <Label x:Name="lblRow" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Row"/>
-                <TextBox x:Name="txtRow" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80"/>
-                <Label x:Name="lblColumn" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Column"/>
-                <TextBox x:Name="txtColumn" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80"/>
-                <Button x:Name="btnApply" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Apply" Width="100" Click="btnApply_Click"/>
-        </TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/> <!-- för dynamisk Grid nedanför -->
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <TextBlock x:Name="txtBlockRow" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Row"/>
+            <TextBox x:Name="txtRow" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80"/>
+            <TextBlock x:Name="txtBlockColumn" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Column"/>
+            <TextBox x:Name="txtColumn" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80"/>
+            <Button x:Name="btnApply" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Apply" Width="100" Click="btnApply_Click"/>
+        </StackPanel>
+
+        <!-- Grid där de dynamiska cellerna kommer att skapas -->
+        <Grid x:Name="dynamicGrid" Grid.Row="1" Margin="10">
+            <!-- Definiera rader (användare ser ej denna) -->
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Definiera kolumner (användare ser ej denna) -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="Column0" Background="White" Grid.Column="0" Grid.Row="0"/>
+            <TextBlock x:Name="Column1" Background="White" Grid.Column="0" Grid.Row="1"/>
+            <TextBlock x:Name="Column2" Background="White" Grid.Column="0" Grid.Row="2"/>
+            <TextBlock x:Name="Column3" Background="White" Grid.Column="0" Grid.Row="3"/>
+            <TextBlock x:Name="Column4" Background="White" Grid.Column="1" Grid.Row="0"/>
+            <TextBlock x:Name="Column5" Background="White" Grid.Column="1" Grid.Row="1"/>
+            <TextBlock x:Name="Column6" Background="White" Grid.Column="1" Grid.Row="2"/>
+            <TextBlock x:Name="Column7" Background="White" Grid.Column="1" Grid.Row="3"/>
+            <TextBlock x:Name="Column8" Background="White" Grid.Column="2" Grid.Row="0"/>
+            <TextBlock x:Name="Column9" Background="White" Grid.Column="2" Grid.Row="1"/>
+            <TextBlock x:Name="Column10" Background="White" Grid.Column="2" Grid.Row="2"/>
+            <TextBlock x:Name="Column11" Background="White" Grid.Column="2" Grid.Row="3"/>
+            <TextBlock x:Name="Column12" Background="White" Grid.Column="3" Grid.Row="0"/>
+            <TextBlock x:Name="Column13" Background="White" Grid.Column="3" Grid.Row="1"/>
+            <TextBlock x:Name="Column14" Background="White" Grid.Column="3" Grid.Row="2"/>
+            <TextBlock x:Name="Column15" Background="White" Grid.Column="3" Grid.Row="3"/>
+
+        </Grid>
     </Grid>
 </Window>
