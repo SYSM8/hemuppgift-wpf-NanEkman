@@ -15,7 +15,8 @@ namespace Hemuppgift_WPFtemplate
 
         private void GridButton(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Grid_Window());
+            Grid_Window grid_Window = new Grid_Window();
+            grid_Window.Show();
         }
 
         private void StackPanelButton(object sender, RoutedEventArgs e)
