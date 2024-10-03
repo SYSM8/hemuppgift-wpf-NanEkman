@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
-
+        <Button x:Name="btnGrid" Content="Grid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="200" Click="GridButton"/>
+        <Button x:Name="btnStackPanel" Content="StackPanel" HorizontalAlignment="Right" VerticalAlignment="Top" Height="200" Width="200" Click="StackPanelButton"/>
+        <Button x:Name="btnWrapPanel" Content="WrapPanel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="200" Width="200" Click="WrapPanelButton"/>
+        <Button x:Name="btnDockPanel" Content="DockPanel" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="200" Width="200" Click="DockPanelButton"/>
     </Grid>
 </Window>
