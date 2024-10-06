@@ -23,5 +23,26 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void rbtn1_Click(object sender, RoutedEventArgs e)
+        {
+            if(rbtn1.IsChecked == true)
+            {
+                MyWrapPanel.Orientation = Orientation.Horizontal;
+            }
+
+        }
+
+        private void rbtn2_Click(object sender, RoutedEventArgs e)
+        {
+            if (rbtn2.IsChecked == true)
+            {
+                // Sätt alla ellipser i vertikal layout
+                MyWrapPanel.Orientation = Orientation.Vertical;
+                // Lägger till en fast storlek för att ellipserna inte ska placeras bredvid varandra
+                MyWrapPanel.Width = 110;
+            }
+
+        }
     }
 }
