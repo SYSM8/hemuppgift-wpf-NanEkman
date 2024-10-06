@@ -12,7 +12,8 @@
             <RadioButton x:Name="rbtn2" Content="Vertical" Click="rbtn2_Click"/>
         </StackPanel>
 
-        <WrapPanel x:Name="MyWrapPanel" Margin="-1,30,1,0" HorizontalAlignment="Left">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,30,0,0">
+            <WrapPanel x:Name="MyWrapPanel" Margin="-1,30,1,0" HorizontalAlignment="Left">
             <Ellipse x:Name="ellipse1" Fill = "Red" Width="100" Height="100" Margin="5"/>
             <Ellipse x:Name="ellipse2" Fill = "Orange" Width="90" Height="90" Margin="5"/>
             <Ellipse x:Name="ellipse3" Fill = "Yellow" Width="80" Height="80" Margin="5"/>
@@ -22,6 +23,6 @@
             <Ellipse x:Name="ellipse7" Fill = "Blue" Width="40" Height="40" Margin="5"/>
             <Ellipse x:Name="ellipse8" Fill = "Black" Width="30" Height="30" Margin="5"/>
         </WrapPanel>
-
+            </ScrollViewer>
     </Grid>
 </Window>
