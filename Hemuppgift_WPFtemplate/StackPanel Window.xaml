@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="StackPanel_Window" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal">
+            <RadioButton x:Name="rbtn1" Content="Horizontal"/>
+            <RadioButton x:Name="rbtn2" Content="Vertical"/>
+        </StackPanel>
+
+        <Canvas>
+            <Rectangle Fill = "Red" Width="100" Height="100" Margin="5" Canvas.Left="20" Canvas.Top="50"/>
+            <Rectangle Fill = "Orange" Width="90" Height="90" Margin="10" Canvas.Left="130" Canvas.Top="50"/>
+            <Rectangle Fill = "Yellow" Width="80" Height="80" Margin="15" Canvas.Left="230" Canvas.Top="50"/>
+            <Rectangle Fill = "LightGreen" Width="70" Height="70" Margin="20" Canvas.Left="320" Canvas.Top="50"/>
+            <Rectangle Fill = "Green" Width="60" Height="60" Margin="25" Canvas.Left="400" Canvas.Top="50"/>
+            <Rectangle Fill = "LightBlue" Width="50" Height="50" Margin="30" Canvas.Left="470" Canvas.Top="50"/>
+            <Rectangle Fill = "Blue" Width="40" Height="40" Margin="35" Canvas.Left="530" Canvas.Top="50"/>
+            <Rectangle Fill = "Black" Width="30" Height="30" Margin="40" Canvas.Left="580" Canvas.Top="50"/>
+        </Canvas>
+
+
     </Grid>
 </Window>
