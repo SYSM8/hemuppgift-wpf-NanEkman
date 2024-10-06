@@ -13,8 +13,8 @@
             <RadioButton x:Name="rbtn2" Content="Vertical" Click="rbtn2_Click"/>
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,30,0,0">
-            <Canvas x:Name="MyCanvas" Width="800" Height="200" VerticalAlignment="Top">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,30,0,0">
+            <Canvas x:Name="MyCanvas" Width="800" Height="800" VerticalAlignment="Top">
             <Rectangle x:Name="rek1" Fill = "Red" Width="100" Height="100" Margin="5" Canvas.Left="20" Canvas.Top="50"/>
             <Rectangle x:Name="rek2" Fill = "Orange" Width="90" Height="90" Margin="10" Canvas.Left="130" Canvas.Top="50"/>
             <Rectangle x:Name="rek3" Fill = "Yellow" Width="80" Height="80" Margin="15" Canvas.Left="230" Canvas.Top="50"/>

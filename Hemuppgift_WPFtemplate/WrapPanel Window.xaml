@@ -12,7 +12,7 @@
             <RadioButton x:Name="rbtn2" Content="Vertical" Click="rbtn2_Click"/>
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,30,0,0">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,30,0,0">
             <WrapPanel x:Name="MyWrapPanel" Margin="-1,30,1,0" HorizontalAlignment="Left">
             <Ellipse x:Name="ellipse1" Fill = "Red" Width="100" Height="100" Margin="5"/>
             <Ellipse x:Name="ellipse2" Fill = "Orange" Width="90" Height="90" Margin="5"/>
