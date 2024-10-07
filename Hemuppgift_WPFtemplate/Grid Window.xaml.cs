@@ -46,7 +46,7 @@ namespace Hemuppgift_WPFtemplate
             }
             else
             {
-                MessageBox.Show("Vänligen mata in ett heltal mellan 0 och 3 fär både rad och kolumn");
+                MessageBox.Show("Vänligen mata in ett heltal mellan 0 och 3 för både rad och kolumn");
             }
         }
         // Metod för att reset bakgrunden

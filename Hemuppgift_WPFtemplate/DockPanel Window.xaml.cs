@@ -24,9 +24,13 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void btnCenter_Click(object sender, RoutedEventArgs e)
+        {
+            if(btnCenter.IsEnabled)
+            {
+                ImageTrophy.IsEnabled = true;
+            }
         }
     }
 }

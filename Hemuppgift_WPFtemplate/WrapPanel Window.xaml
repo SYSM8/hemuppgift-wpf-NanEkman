@@ -13,16 +13,16 @@
         </StackPanel>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,30,0,0">
-            <WrapPanel x:Name="MyWrapPanel" Margin="-1,30,1,0" HorizontalAlignment="Left">
-            <Ellipse x:Name="ellipse1" Fill = "Red" Width="100" Height="100" Margin="5"/>
-            <Ellipse x:Name="ellipse2" Fill = "Orange" Width="90" Height="90" Margin="5"/>
-            <Ellipse x:Name="ellipse3" Fill = "Yellow" Width="80" Height="80" Margin="5"/>
-            <Ellipse x:Name="ellipse4" Fill = "LightGreen" Width="70" Height="70" Margin="5"/>
-            <Ellipse x:Name="ellipse5" Fill = "Green" Width="60" Height="60" Margin="5" />
-            <Ellipse x:Name="ellipse6" Fill = "LightBlue" Width="50" Height="50" Margin="5"/>
-            <Ellipse x:Name="ellipse7" Fill = "Blue" Width="40" Height="40" Margin="5"/>
-            <Ellipse x:Name="ellipse8" Fill = "Black" Width="30" Height="30" Margin="5"/>
+        <WrapPanel x:Name="MyWrapPanel" Margin="-1,30,1,0" HorizontalAlignment="Left">
+            <Ellipse Fill = "Red" Width="100" Height="100" Margin="5"/>
+            <Ellipse Fill = "Orange" Width="90" Height="90" Margin="5"/>
+            <Ellipse Fill = "Yellow" Width="80" Height="80" Margin="5"/>
+            <Ellipse Fill = "LightGreen" Width="70" Height="70" Margin="5"/>
+            <Ellipse Fill = "Green" Width="60" Height="60" Margin="5" />
+            <Ellipse Fill = "LightBlue" Width="50" Height="50" Margin="5"/>
+            <Ellipse Fill = "Blue" Width="40" Height="40" Margin="5"/>
+            <Ellipse Fill = "Black" Width="30" Height="30" Margin="5"/>
         </WrapPanel>
-            </ScrollViewer>
+        </ScrollViewer>
     </Grid>
 </Window>
